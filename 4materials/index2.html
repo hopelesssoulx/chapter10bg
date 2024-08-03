@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title></title>
+  </head>
+
+  <body>
+    <main>
+      <div class="top-1"></div>
+      <div class="mid-1"></div>
+      <div class="mid-2"></div>
+      <div class="mid-3"></div>
+      <div class="main-pic"></div>
+
+      <div class="mask-sunlight"></div>
+      <div class="mask-cloud"></div>
+
+      <div class="item-sunrise"></div>
+    </main>
+  </body>
+
+  <style scoped>
+    html {
+      scroll-behavior: smooth;
+    }
+    body {
+      margin: 0;
+      padding: 0;
+      overflow: hidden;
+      width: 100%;
+      height: 100vh;
+      background: black;
+    }
+    main {
+      position: relative;
+      width: 1024px;
+      height: 768px;
+      overflow: hidden;
+      left: 50%;
+      top: 50%;
+      transform: translate(-50%, -50%) scale(1.875);
+      transform: translate(-50%, -50%);
+      background: white;
+    }
+
+    .main-pic {
+      position: absolute;
+      bottom: 0;
+      z-index: 50;
+      width: 1024px;
+      height: 543px;
+      background-image: url("./main-1024x543.png");
+      background-size: 1024px 543px;
+    }
+
+    .top-1 {
+      position: absolute;
+      top: 0px;
+      z-index: 70;
+      width: 2190px;
+      height: 121px;
+      background-image: url("./top-1c-730x121.png");
+      background-size: 730px 121px;
+      background-repeat: repeat-x;
+      animation: top1 40s linear infinite;
+    }
+    @keyframes top1 {
+      0% {
+        left: 0;
+      }
+      100% {
+        left: -730px;
+      }
+    }
+    .mid-1 {
+      position: absolute;
+      top: 20px;
+      z-index: 60;
+      width: 5301px;
+      height: 188px;
+      background-image: url("./mid-1c-1767x188.png");
+      background-size: 1767px 188px;
+      background-repeat: repeat-x;
+      animation: mid1 120s linear infinite;
+    }
+    @keyframes mid1 {
+      0% {
+        left: 0;
+      }
+      100% {
+        left: -1767px;
+      }
+    }
+    .mid-2 {
+      position: absolute;
+      top: 120px;
+      z-index: 40;
+      width: 3102px;
+      height: 140px;
+      background-image: url("./mid-2-1034x140.png");
+      background-size: 1034px 140px;
+      background-repeat: repeat-x;
+      animation: mid2 120s linear infinite;
+    }
+    @keyframes mid2 {
+      0% {
+        left: 0;
+      }
+      100% {
+        left: -1034px;
+      }
+    }
+    .mid-3 {
+      position: absolute;
+      top: 180px;
+      z-index: 40;
+      width: 1242px;
+      height: 150px;
+      background-image: url("./mid-3-1242x150.png");
+      background-size: 1242px 150px;
+    }
+
+    .mask-sunlight {
+      position: absolute;
+      z-index: 60;
+      width: 1024px;
+      height: 594px;
+      background-image: url("./mask-sunlight.png");
+      background-size: 1024px 594px;
+      background-repeat: no-repeat;
+      opacity: 0.6;
+    }
+    .mask-cloud {
+      position: absolute;
+      bottom: 0;
+      z-index: 60;
+      width: 2048px;
+      height: 256px;
+      background-image: url("./mask-cloud.png");
+      background-size: 1024px 256px;
+      background-repeat: repeat-x;
+      animation: mask-cloud 120s linear infinite;
+    }
+    @keyframes mask-cloud {
+      0% {
+        left: 0;
+      }
+      100% {
+        left: -1024px;
+      }
+    }
+
+    .item-sunrise {
+      position: absolute;
+      top: 270px;
+      left: 225px;
+      z-index: 50;
+      width: 603px;
+      height: 122px;
+      background-image: url("./item-sunrisec.png");
+      background-size: 603px 122px;
+      background-repeat: no-repeat;
+    }
+  </style>
+
+  <script>
+    document.title = "\u200E";
+  </script>
+</html>
